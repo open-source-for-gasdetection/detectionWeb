@@ -6,10 +6,6 @@
   box-sizing: border-box;
 }
 
-html {
-  height: 100%;
-}
-
 body {
   background-color: #f5f5f5;
   overflow: hidden;
@@ -87,6 +83,7 @@ a:hover {
   transition: width 0.3s;
   content: "";
 }
+
 .nav__link:hover:after {
   width: 100%;
 }
@@ -100,6 +97,7 @@ a:hover {
   background-color: gray;
   background-size: cover;
 }
+
 .main__header:after {
   position: absolute;
   top: 0;
@@ -110,36 +108,43 @@ a:hover {
   background-color: rgba(10, 10, 10, 0.6);
   content: "";
 }
+
 .main__title {
   z-index: 1;
   position: relative;
   color: #fff;
 }
+
 .listing-card {
   max-width: 900px;
   margin: 30px auto 60px;
   padding: 0 10px;
 }
+
 .listing-card__list {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
   grid-gap: 30px;
 }
+
 .listing-card__item {
   width: 100%;
   padding: 10px;
   background-color: #fff;
   border: 1px solid #f0f0f0;
 }
+
 .listing-card__image {
   height: 0;
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 80%;
 }
+
 .listing-card__info {
   margin: 20px 0 10px;
 }
+
 .listing-card__name {
   display: block;
   margin-bottom: 6px;
@@ -160,22 +165,58 @@ a:hover {
   width: 100%;
 }
 
-/*gallery css*/
+/* gallery css */
 
-.main__body {
-  position: static;
-  padding: 3fr; /*수정*/
+div.main__body_gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap;
+  margin: 3px;
+  height: 100%;
 }
 
-.image {
-    position:relative;
-    float: left;
-    height: 200px;
-    width: 300px;
-    margin: 2px;
-    border: 1px solid white;
-    z-index: 0;
+figure.img_effect {
+  position: relative;
+  overflow: hidden;
+  margin: 3px;
+  min-width: 120px;
+  max-width: 210px;
+  max-height: 130px;
+  width: 100%;
+  background: #000000;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
 }
+
+figure.img_effect * {
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+-webkit-transition: all 0.45s ease-in-out;
+transition: all 0.45s ease-in-out;
+}
+
+figure.img_effect img {
+max-width: 100%;
+position: relative;
+opacity: 1;
+}
+
+figure.img_effect a {
+left: 0;
+right: 0;
+top: 0;
+bottom: 0;
+position: absolute;
+z-index: 1;
+}
+
+figure.img_effect:hover img{
+opacity: 0.35;
+-webkit-transform: scale(1.15);
+transform: scale(1.15);
+}
+
+/* classification css */
 
 .classification_image {
     position:static;
@@ -201,5 +242,4 @@ a:hover {
 }
 
 /* 수정
-main__body -> 이미지, 버튼 위치 수정
-lassification_image,button -> 이미지는 화면 전체 크기로, 이미지 밑에 버튼 가운데 정렬되게 */
+classification_image,button -> 이미지는 화면 전체 크기로, 이미지 밑에 버튼 가운데 정렬되게 */

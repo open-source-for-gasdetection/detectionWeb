@@ -1,3 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Work Sans", sans-serif;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: #f5f5f5;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  color: #763bff;
+}
+
 .wrap {
   display: grid;
   grid-template-columns: 200px minmax(420px, 1fr);
@@ -36,6 +62,7 @@
   padding: 8px 20px;
   background-color: #ff5662;
 }
+
 .nav__list {
   font-size: 16px;
   padding: 0 20px;
@@ -63,8 +90,6 @@
 .nav__link:hover:after {
   width: 100%;
 }
-
-
 
 .main__header {
   position: relative;
@@ -135,17 +160,11 @@
   width: 100%;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  font-family: "Work Sans", sans-serif;
-  list-style: none;
-  box-sizing: border-box;
-}
+/*gallery css*/
 
-body {
-  background-color: #f5f5f5;
-  overflow: hidden;
+.main__body {
+  position: static;
+  padding: 3fr; /*수정*/
 }
 
 .image {
@@ -157,3 +176,30 @@ body {
     border: 1px solid white;
     z-index: 0;
 }
+
+.classification_image {
+    position:static;
+    height: 200px;
+    width: 300px;
+    margin: 2px;
+    border: 1px solid white;
+    z-index: 0;
+}
+.classification_button {
+
+}
+
+.button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font: 16px bold;
+}
+
+/* 수정
+main__body -> 이미지, 버튼 위치 수정
+lassification_image,button -> 이미지는 화면 전체 크기로, 이미지 밑에 버튼 가운데 정렬되게 */

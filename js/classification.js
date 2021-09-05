@@ -16,3 +16,9 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";  
 }
+
+function toastPopup() {
+    var x = document.getElementById("popupMsg");
+    x.className = "show";
+    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}

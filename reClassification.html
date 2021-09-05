@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Classification</title>
+        <link rel="stylesheet" href="CSS/frame.css">
+        
+    </head>
+    <body>
+        <div class="wrap">
+
+            <div class="header">    
+              <nav class="nav">
+                <div class="nav__wrap">
+    
+                  <div class="nav__container"><h1><strong class="nav__title">MENU</strong></h1>
+                    <ul class="nav__list">
+                      <li class="nav__item"><a href="layout.html" class="nav__link">Home</a></li>
+                      <li class="nav__item"><a href="complete.html" class="nav__link">complete</a></li>
+                      <li class="nav__item"><a href="incomplete.html" class="nav__link">incomplete</a></li>
+                    </ul>
+                  </div>
+    
+                 </div>
+              </nav>    
+            </div>
+
+            <div class="main" role="main">
+                <div class="main__header">
+                  <h2 class="main__title">smoking detection</h2>
+                </div>
+                <!-- 서버 연동 후 수정 필요 -->
+                <div class="main__body">
+                  <div class="filename">#Filename</div>
+                  <div class="classification_img">
+                    <div class="slideshow-container">
+                      <div class="mySlides fade"> 
+                        <img class="slideImg"src="./images/smoke1.jpeg">
+                      </div>
+                      
+                      <div class="mySlides fade">
+                        <img class="slideImg" src="./images/smoke2.jpg">
+                      </div>
+                      
+                      <div class="mySlides fade">
+                        <img class="slideImg" src="./images/smoke3.jpg">
+                      </div>
+
+                      <div class="mySlides fade">
+                        <img class="slideImg" src="./images/smoke4.jpg">
+                      </div>
+
+                      <div class="mySlides fade">
+                        <img class="slideImg" src="./images/smoke5.jpg">
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div class="classification_button">
+                    <span onclick="plusSlides(1)"><button type="button" onclick="toastPopup()">흡연</button></span> 
+                    <span onclick="plusSlides(1)"><button type="button" onclick="toastPopup()">비흡연</button></span> 
+                  </div>
+                </div>
+                <!-- <div class="popupMsg">분류 완료</div> -->
+              </div>
+        </div>
+        <script src="./js/classification.js"></script>
+    </body>
+</html>

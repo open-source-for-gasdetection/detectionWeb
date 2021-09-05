@@ -167,7 +167,7 @@ a:hover {
 
 /* gallery css */
 
-div.main__body_gallery {
+div.main__body_gallery, .classification_img {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -189,48 +189,60 @@ figure.img_effect {
 }
 
 figure.img_effect * {
--webkit-box-sizing: border-box;
-box-sizing: border-box;
--webkit-transition: all 0.45s ease-in-out;
-transition: all 0.45s ease-in-out;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.45s ease-in-out;
+  transition: all 0.45s ease-in-out;
 }
 
 figure.img_effect img {
-max-width: 100%;
-position: relative;
-opacity: 1;
+  max-width: 100%;
+  position: relative;
+  opacity: 1;
 }
 
 figure.img_effect a {
-left: 0;
-right: 0;
-top: 0;
-bottom: 0;
-position: absolute;
-z-index: 1;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 1;
 }
 
 figure.img_effect:hover img{
-opacity: 0.35;
--webkit-transform: scale(1.15);
-transform: scale(1.15);
+  opacity: 0.35;
+  -webkit-transform: scale(1.15);
+  transform: scale(1.15);
 }
 
 /* classification css */
-
-.classification_image {
-    position:static;
-    height: 200px;
-    width: 300px;
-    margin: 2px;
-    border: 1px solid white;
-    z-index: 0;
+.mySlides {
+  display: none
 }
+
+.slideImg {
+  vertical-align: middle;
+  width: 100%;
+}
+
+.classification_img{
+  height: auto;
+  margin: 20px 0 20px 0;
+  background-color: rgba(88, 88, 88, 0.192);
+}
+
+.slideshow-container {
+  max-width: 800px;
+  position: relative;
+  margin: auto;
+}
+
 .classification_button {
-
+  text-align: center;
 }
 
-.button {
+button {
   background-color: black;
   color: white;
   border: none;
@@ -241,5 +253,6 @@ transform: scale(1.15);
   font: 16px bold;
 }
 
-/* 수정
-classification_image,button -> 이미지는 화면 전체 크기로, 이미지 밑에 버튼 가운데 정렬되게 */
+button:hover {
+  background-color: #ff3b49;
+}

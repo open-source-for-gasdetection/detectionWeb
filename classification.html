@@ -10,19 +10,15 @@
     <body>
         <div class="wrap">
 
-            <div class="header">
-    
+            <div class="header">    
               <nav class="nav">
                 <div class="nav__wrap">
     
                   <div class="nav__container"><h1><strong class="nav__title">MENU</strong></h1>
                     <ul class="nav__list">
                       <li class="nav__item"><a href="layout.html" class="nav__link">Home</a></li>
-                      <li class="nav__item"><a href="complete.html" class="nav__link">complete</a>
-                      </li>
-                      <li class="nav__item"><a href="incompletion.html" class="nav__link">incomplete</a>
-                      </li>
-                      
+                      <li class="nav__item"><a href="complete.html" class="nav__link">complete</a></li>
+                      <li class="nav__item"><a href="incompletion.html" class="nav__link">incomplete</a></li>
                     </ul>
                   </div>
     
@@ -35,16 +31,42 @@
                   <h2 class="main__title">smoking detection</h2>
                 </div>
                 <div class="main__body">
-                  <div>
-                    <img class="classification_image" src="./images/smoke1.jpeg">
+                  <!-- 서버 연동 후 수정 필요 -->
+                  <div class="classification_img">
+                    
+                    <div class="slideshow-container">
+
+                      <div class="mySlides fade"> 
+                        <img class="slideImg"src="./images/smoke1.jpeg" style="width:100%">
+                      </div>
+                      
+                      <div class="mySlides fade">
+                        <img src="./images/smoke2.jpg" style="width:100%">
+                      </div>
+                      
+                      <div class="mySlides fade">
+                        <img src="./images/smoke3.jpg" style="width:100%">
+                      </div>
+
+                      <div class="mySlides fade">
+                        <img src="./images/smoke4.jpg" style="width:100%">
+                      </div>
+
+                      <div class="mySlides fade">
+                        <img src="./images/smoke5.jpg" style="width:100%">
+                      </div>
+
+                    </div>
+                    <br>
                   </div>
                   <div class="classification_button">
-                    <button class="button" type="button">흡연</button>
-                    <button class="button" type="button">비흡연</button>
-                    <button class="button" type="button">보류</button>
+                    <span onclick="plusSlides(1)"><button type="button">흡연</button></span> 
+                    <span onclick="plusSlides(1)"><button type="button">비흡연</button></span> 
+                    <span onclick="plusSlides(1)"><button type="button">보류</button></span> 
                   </div>
                 </div>
               </div>
         </div>
+        <script src="./js/classification.js"></script>
     </body>
 </html>

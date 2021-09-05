@@ -217,8 +217,14 @@ figure.img_effect:hover img{
 }
 
 /* classification css */
+
 .mySlides {
   display: none
+}
+.filename {
+  margin: 20px;
+  font-size: 150%;
+  font-weight: bold;
 }
 
 .slideImg {
@@ -228,7 +234,7 @@ figure.img_effect:hover img{
 
 .classification_img{
   height: auto;
-  margin: 20px 0 20px 0;
+  margin: 0 0 20px 0;
   background-color: rgba(88, 88, 88, 0.192);
 }
 
@@ -256,3 +262,49 @@ button {
 button:hover {
   background-color: #ff3b49;
 }
+
+/* 수정 필요
+
+.popupMsg {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+  font-size: 17px;
+}
+
+.popupMsg {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 1.0s;
+  animation: fadein 0.5s, fadeout 0.5s 1.0s;
+}
+
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;} 
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;} 
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+
+*/

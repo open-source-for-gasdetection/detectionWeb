@@ -30,41 +30,40 @@
                 <div class="main__header">
                   <h2 class="main__title">smoking detection</h2>
                 </div>
+                <!-- 서버 연동 후 수정 필요 -->
                 <div class="main__body">
-                  <!-- 서버 연동 후 수정 필요 -->
+                  <div class="filename">#Filename</div>
                   <div class="classification_img">
-                    
                     <div class="slideshow-container">
-
                       <div class="mySlides fade"> 
-                        <img class="slideImg"src="./images/smoke1.jpeg" style="width:100%">
+                        <img class="slideImg"src="./images/smoke1.jpeg">
                       </div>
                       
                       <div class="mySlides fade">
-                        <img src="./images/smoke2.jpg" style="width:100%">
+                        <img class="slideImg" src="./images/smoke2.jpg">
                       </div>
                       
                       <div class="mySlides fade">
-                        <img src="./images/smoke3.jpg" style="width:100%">
+                        <img class="slideImg" src="./images/smoke3.jpg">
                       </div>
 
                       <div class="mySlides fade">
-                        <img src="./images/smoke4.jpg" style="width:100%">
+                        <img class="slideImg" src="./images/smoke4.jpg">
                       </div>
 
                       <div class="mySlides fade">
-                        <img src="./images/smoke5.jpg" style="width:100%">
+                        <img class="slideImg" src="./images/smoke5.jpg">
                       </div>
-
                     </div>
-                    <br>
+                    
                   </div>
                   <div class="classification_button">
-                    <span onclick="plusSlides(1)"><button type="button">흡연</button></span> 
-                    <span onclick="plusSlides(1)"><button type="button">비흡연</button></span> 
-                    <span onclick="plusSlides(1)"><button type="button">보류</button></span> 
+                    <span onclick="plusSlides(1)"><button type="button" onclick="toastPopup()">흡연</button></span> 
+                    <span onclick="plusSlides(1)"><button type="button" onclick="toastPopup()">비흡연</button></span> 
+                    <span onclick="plusSlides(1)"><button type="button" onclick="toastPopup()">보류</button></span> 
                   </div>
                 </div>
+                <!-- <div class="popupMsg">분류 완료</div> -->
               </div>
         </div>
         <script src="./js/classification.js"></script>
